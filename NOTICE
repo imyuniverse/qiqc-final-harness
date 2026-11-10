@@ -1,0 +1,59 @@
+qiqc-final-deepseek
+QIQC Challenge 2026 submission harness
+
+Copyright (C) 2026 the qiqc-final authors
+
+================================================================
+1. License of this submission
+================================================================
+
+All content original to this team -- harness/cz_agent.py,
+harness/PLAYBOOK.md, and the modifications this team made to
+harness/runtime.py, harness/qsim.py and harness.json -- is released
+under the GNU Affero General Public License, version 3 only
+(AGPL-3.0-only). The full license text is in the LICENSE file.
+
+================================================================
+2. Upstream code (MIT) and why it is not relicensed
+================================================================
+
+The following files originate from the Quantum-Harbor starter harness,
+distributed under the MIT License by the Quantum-Harbor project
+(https://github.com/GaugeForge/Quantum-Harbor):
+
+    adapter/run.sh                     (unmodified)
+    harness/runtime.py                 (modified by this team)
+    harness/qsim.py                    (modified by this team)
+    harness/terminal.py                (unmodified)
+    harness/README.md                  (unmodified)
+    harness.json                       (modified by this team)
+
+The upstream MIT license is retained for these files. Per the
+competition terms, the contest does not relicense upstream code; this
+team claims AGPL-3.0-only only over its own additions and
+modifications, not over the upstream portions. MIT and AGPL-3.0 are
+compatible in this direction: MIT-licensed code may be included in an
+AGPL-3.0 work, and the upstream MIT terms continue to apply to the
+upstream portions.
+
+================================================================
+3. Third-party dependencies
+================================================================
+
+    numpy   BSD-3-Clause
+    scipy   BSD-3-Clause
+    mcp     MIT  (Model Context Protocol Python SDK)
+
+These dependencies are not vendored into this archive; they are
+provided by the runtime environment.
+
+================================================================
+4. No confidential material
+================================================================
+
+This archive contains no hidden task materials, no private evaluation
+records, no credentials and no third-party confidential data. Every
+physical constant used by harness/cz_agent.py (device identifier,
+qubit frequencies, gate flux) comes from the task's public
+instruction; all other device values are measured at runtime through
+the task's own MCP service.

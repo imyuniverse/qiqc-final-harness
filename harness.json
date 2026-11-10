@@ -1,0 +1,5 @@
+{
+  "runtime": "deepseek",
+  "name": "qiqc-final",
+  "description": "Stock runtime plus an in-situ net-zero CZ solver (cryoscope, chevron, predistortion, shot-based conditional-phase loop, verification, submission)."
+}
