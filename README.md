@@ -1,6 +1,7 @@
 # qiqc-final-harness
 
 QIQC Challenge 2026 final submission harness.
+Team **Universal** · entrant **Ma Yuzhe**.
 
 Full evaluation: **26 / 39 tasks**, average 3356 s per task.
 Public tasks: 3 / 5 (logical CNOT decoder, Hamiltonian learning, net-zero CZ).
