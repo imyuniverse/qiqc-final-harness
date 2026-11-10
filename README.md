@@ -6,6 +6,10 @@ Team **Universal** · entrant **Ma Yuzhe**.
 Full evaluation: **26 / 39 tasks**, average 3356 s per task.
 Public tasks: 3 / 5 (logical CNOT decoder, Hamiltonian learning, net-zero CZ).
 
+The evaluated archive is frozen in `artifacts/` and every runtime file in it is
+byte-identical to this working tree. See [SUBMISSION.md](SUBMISSION.md) for the
+SHA-256, then check it with `shasum -a 256 -c SHA256SUMS.txt`.
+
 ## Design
 
 The harness has two layers.
@@ -37,6 +41,9 @@ harness/qsim.py       MCP client: list / call / batch
 harness/cz_agent.py   net-zero CZ solver (only task with a dedicated solver)
 harness/terminal.py   terminal-event validation for the native CLI
 harness/PLAYBOOK.md   physics and acceptance checks of the CZ solver
+artifacts/            the frozen archive that was evaluated (19,831 bytes)
+SUBMISSION.md         checksum and inventory of that archive
+SHA256SUMS.txt        machine-checkable checksums of the archive and tree
 BUILD.md              requirements, entrypoint, environment contract
 CHANGES.md            differences from the upstream starter harness
 NOTICE                licensing: AGPL-3.0-only plus upstream MIT retention
